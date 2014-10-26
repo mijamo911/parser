@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Parsing Techniques, A Practical Guide, 2nd ed, sec. 9.5, pp. 280 -->
+<grammar>
+    <start>S</start>
+    <empty>empty</empty>
+    <production id="1">
+        <lhs>S</lhs>
+        <rhs>
+            <symbol>E</symbol>
+            <symbol>$</symbol>
+        </rhs>
+    </production>
+    <production id="2">
+        <lhs>E</lhs>
+        <rhs>
+            <symbol>E</symbol>
+            <symbol>-</symbol>
+            <symbol>T</symbol>
+        </rhs>
+    </production>
+    <production id="3">
+        <lhs>E</lhs>
+        <rhs>
+            <symbol>T</symbol>
+        </rhs>
+    </production>
+    <production id="4">
+        <lhs>T</lhs>
+        <rhs>
+            <symbol>n</symbol>
+        </rhs>
+    </production>
+    <production id="5">
+        <lhs>T</lhs>
+        <rhs>
+            <symbol>(</symbol>
+            <symbol>E</symbol>
+            <symbol>)</symbol>
+        </rhs>
+    </production>
+    
+    <terminal name="$" bucket="1">\$</terminal>
+    <terminal name="-" bucket="1">-</terminal>
+    <terminal name="n" bucket="1">[0-9]+</terminal>
+    <terminal name="(" bucket="1">\(</terminal>
+    <terminal name=")" bucket="1">\)</terminal>
+</grammar>

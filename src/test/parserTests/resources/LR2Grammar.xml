@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar>
+    <start>S</start>
+    <end>#</end>
+    <empty>empty</empty>
+    <whitespace>whitespace</whitespace>
+    <production id="1">
+        <lhs>S</lhs>
+        <rhs>
+            <symbol>A</symbol>
+            <symbol>a</symbol>
+        </rhs>
+    </production>
+    <production id="2">
+        <lhs>S</lhs>
+        <rhs>
+            <symbol>B</symbol>
+            <symbol>b</symbol>
+        </rhs>
+    </production>
+    <production id="3">
+        <lhs>S</lhs>
+        <rhs>
+            <symbol>C</symbol>
+            <symbol>e</symbol>
+            <symbol>c</symbol>
+        </rhs>
+    </production>
+    <production id="4">
+        <lhs>S</lhs>
+        <rhs>
+            <symbol>D</symbol>
+            <symbol>e</symbol>
+            <symbol>d</symbol>
+        </rhs>
+    </production>
+    <production id="5">
+        <lhs>A</lhs>
+        <rhs>
+            <symbol>q</symbol>
+            <symbol>E</symbol>
+        </rhs>
+    </production>
+    <production id="6">
+        <lhs>B</lhs>
+        <rhs>
+            <symbol>q</symbol>
+            <symbol>E</symbol>
+        </rhs>
+    </production>
+    <production id="7">
+        <lhs>C</lhs>
+        <rhs>
+            <symbol>q</symbol>
+        </rhs>
+    </production>
+    <production id="8">
+        <lhs>D</lhs>
+        <rhs>
+            <symbol>q</symbol>
+        </rhs>
+    </production>
+    <production id="9">
+        <lhs>E</lhs>
+        <rhs>
+            <symbol>e</symbol>
+        </rhs>
+    </production>
+    
+    <terminal name="a">a</terminal>
+    <terminal name="b">b</terminal>
+    <terminal name="c">c</terminal>
+    <terminal name="d">d</terminal>
+    <terminal name="e">e</terminal>
+    <terminal name="q">q</terminal>
+</grammar>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sec 9.6.1 Fig 9.30 pp 296 -->
+<grammar>
+    <start>S</start>
+    <end>#</end>
+    <empty>empty</empty>
+    <production id="1">
+        <lhs>S</lhs>
+        <rhs>
+            <symbol>A</symbol>
+            <symbol>B</symbol>
+            <symbol>c</symbol>
+        </rhs>
+    </production>
+    <production id="2">
+        <lhs>A</lhs>
+        <rhs>
+            <symbol>a</symbol>
+        </rhs>
+    </production>
+    <production id="3">
+        <lhs>B</lhs>
+        <rhs>
+            <symbol>b</symbol>
+        </rhs>
+    </production>
+    <production id="4">
+        <lhs>B</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    
+    <terminal name="a">a</terminal>
+    <terminal name="b">b</terminal>
+    <terminal name="c">c</terminal>
+</grammar>

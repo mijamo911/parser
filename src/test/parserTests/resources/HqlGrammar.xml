@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- max production id: 66 -->
+<grammar>
+    <start>START</start>
+    <end>#</end>
+    <empty>empty</empty>
+    <whitespace>whitespace</whitespace>
+    <production id="1">
+        <lhs>ALIAS</lhs>
+        <rhs>
+            <symbol>as</symbol>
+            <symbol>NAME</symbol>
+        </rhs>
+    </production>
+    <production id="66">
+        <lhs>ALIAS</lhs>
+        <rhs>
+            <symbol>NAME</symbol>
+        </rhs>
+    </production>
+    <production id="2">
+        <lhs>ALIAS</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="3">
+        <lhs>ARGUMENTS</lhs>
+        <rhs>
+            <symbol>ARGUMENTS</symbol>
+            <symbol>comma</symbol>
+            <symbol>ARGUMENT</symbol>
+        </rhs>
+    </production>
+    <production id="4">
+        <lhs>ARGUMENTS</lhs>
+        <rhs>
+            <symbol>ARGUMENT</symbol>
+        </rhs>
+    </production>
+    <production id="5">
+        <lhs>ARGUMENT</lhs>
+        <rhs>
+            <symbol>EXPRESSION</symbol>
+        </rhs>
+    </production>
+    <production id="6">
+        <lhs>AS</lhs>
+        <rhs>
+            <symbol>as</symbol>
+        </rhs>
+    </production>
+    <production id="7">
+        <lhs>AS</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="8">
+        <lhs>CLASS</lhs>
+        <rhs>
+            <symbol>COMPOUND NAME</symbol>
+            <symbol>ALIAS</symbol>
+        </rhs>
+    </production>
+    <production id="9">
+        <lhs>CLASSES</lhs>
+        <rhs>
+            <symbol>CLASS</symbol>
+        </rhs>
+    </production>
+    <production id="10">
+        <lhs>CLASSES</lhs>
+        <rhs>
+            <symbol>CLASSES</symbol>
+            <symbol>JOIN</symbol>
+            <symbol>FETCH</symbol>
+            <symbol>CLASS</symbol>
+        </rhs>
+    </production>
+    <production id="11">
+        <lhs>COMPOUND NAME</lhs>
+        <rhs>
+            <symbol>NAME</symbol>
+        </rhs>
+    </production>
+    <production id="12">
+        <lhs>COMPOUND NAME</lhs>
+        <rhs>
+            <symbol>COMPOUND NAME</symbol>
+            <symbol>dot</symbol>
+            <symbol>NAME</symbol>
+        </rhs>
+    </production>
+    <production id="13">
+        <lhs>COMPOUND NAMES</lhs>
+        <rhs>
+            <symbol>COMPOUND NAMES</symbol>
+            <symbol>comma</symbol>
+            <symbol>COMPOUND NAME</symbol>
+        </rhs>
+    </production>
+    <production id="14">
+        <lhs>COMPOUND NAMES</lhs>
+        <rhs>
+            <symbol>COMPOUND NAME</symbol>
+        </rhs>
+    </production>
+    <production id="15">
+        <lhs>CONSTRUCTOR</lhs>
+        <rhs>
+            <symbol>new</symbol>
+            <symbol>FUNCTION</symbol>
+            <symbol>ALIAS</symbol>
+        </rhs>
+    </production>
+    <production id="16">
+        <lhs>CROSS JOIN</lhs>
+        <rhs>
+            <symbol>comma</symbol>
+        </rhs>
+    </production>
+    <production id="17">
+        <lhs>DISTINCT</lhs>
+        <rhs>
+            <symbol>distinct</symbol>
+        </rhs>
+    </production>
+    <production id="18">
+        <lhs>DISTINCT</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="19">
+        <lhs>EXPRESSION</lhs>
+        <rhs>
+            <symbol>EXPRESSION</symbol>
+            <symbol>OPERATOR</symbol>
+            <symbol>TERM</symbol>
+        </rhs>
+    </production>
+    <production id="20">
+        <lhs>EXPRESSION</lhs>
+        <rhs>
+            <symbol>TERM</symbol>
+        </rhs>
+    </production>
+    <production id="21">
+        <lhs>FETCH</lhs>
+        <rhs>
+            <symbol>fetch</symbol>
+        </rhs>
+    </production>
+    <production id="22">
+        <lhs>FETCH</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="23">
+        <lhs>FETCH ALL PROPERTIES</lhs>
+        <rhs>
+            <symbol>fetch</symbol>
+            <symbol>all</symbol>
+            <symbol>properties</symbol>
+        </rhs>
+    </production>
+    <production id="24">
+        <lhs>FETCH ALL PROPERTIES</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="25">
+        <lhs>FULL JOIN</lhs>
+        <rhs>
+            <symbol>full</symbol>
+            <symbol>join</symbol>
+        </rhs>
+    </production>
+    <production id="26">
+        <lhs>FUNCTION</lhs>
+        <rhs>
+            <symbol>NAME</symbol>
+            <symbol>left parenthesis</symbol>
+            <symbol>DISTINCT</symbol>
+            <symbol>ARGUMENTS</symbol>
+            <symbol>right parenthesis</symbol>
+        </rhs>
+    </production>
+    <production id="27">
+        <lhs>GROUP BY</lhs>
+        <rhs>
+            <symbol>group</symbol>
+            <symbol>by</symbol>
+        </rhs>
+    </production>
+    <production id="28">
+        <lhs>GROUP BY CLAUSE</lhs>
+        <rhs>
+            <symbol>GROUP BY</symbol>
+            <symbol>COMPOUND NAMES</symbol>
+        </rhs>
+    </production>
+    <production id="29">
+        <lhs>GROUP BY CLAUSE</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="30">
+        <lhs>INNER</lhs>
+        <rhs>
+            <symbol>inner</symbol>
+        </rhs>
+    </production>
+    <production id="31">
+        <lhs>INNER</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="32">
+        <lhs>INNER JOIN</lhs>
+        <rhs>
+            <symbol>INNER</symbol>
+            <symbol>join</symbol>
+        </rhs>
+    </production>
+    <production id="33">
+        <lhs>JOIN</lhs>
+        <rhs>
+            <symbol>CROSS JOIN</symbol>
+        </rhs>
+    </production>
+    <production id="34">
+        <lhs>JOIN</lhs>
+        <rhs>
+            <symbol>FULL JOIN</symbol>
+        </rhs>
+    </production>
+    <production id="35">
+        <lhs>JOIN</lhs>
+        <rhs>
+            <symbol>INNER JOIN</symbol>
+        </rhs>
+    </production>
+    <production id="36">
+        <lhs>JOIN</lhs>
+        <rhs>
+            <symbol>LEFT OUTER JOIN</symbol>
+        </rhs>
+    </production>
+    <production id="37">
+        <lhs>JOIN</lhs>
+        <rhs>
+            <symbol>RIGHT OUTER JOIN</symbol>
+        </rhs>
+    </production>
+    <production id="38">
+        <lhs>LEFT OUTER JOIN</lhs>
+        <rhs>
+            <symbol>left</symbol>
+            <symbol>OUTER</symbol>
+            <symbol>join</symbol>
+        </rhs>
+    </production>
+    <production id="39">
+        <lhs>NAME</lhs>
+        <rhs>
+            <symbol>name</symbol>
+        </rhs>
+    </production>
+    <production id="40">
+        <lhs>OBJECT</lhs>
+        <rhs>
+            <symbol>COMPOUND NAME</symbol>
+        </rhs>
+    </production>
+    <production id="41">
+        <lhs>OBJECTS</lhs>
+        <rhs>
+            <symbol>OBJECT</symbol>
+        </rhs>
+    </production>
+    <production id="42">
+        <lhs>OBJECTS</lhs>
+        <rhs>
+            <symbol>OBJECTS</symbol>
+            <symbol>comma</symbol>
+            <symbol>OBJECT</symbol>
+        </rhs>
+    </production>
+    <production id="43">
+        <lhs>OBJECTS</lhs>
+        <rhs>
+            <symbol>CONSTRUCTOR</symbol>
+        </rhs>
+    </production>
+    <production id="44">
+        <lhs>OBJECTS</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="45">
+        <lhs>OPERATOR</lhs>
+        <rhs>
+            <symbol>concatenation</symbol>
+        </rhs>
+    </production>
+    <production id="46">
+        <lhs>OPERATOR</lhs>
+        <rhs>
+            <symbol>equals</symbol>
+        </rhs>
+    </production>
+    <production id="47">
+        <lhs>OPERATOR</lhs>
+        <rhs>
+            <symbol>like</symbol>
+        </rhs>
+    </production>
+    <production id="48">
+        <lhs>OPERATOR</lhs>
+        <rhs>
+            <symbol>plus</symbol>
+        </rhs>
+    </production>
+    <production id="49">
+        <lhs>ORDER BY</lhs>
+        <rhs>
+            <symbol>order</symbol>
+            <symbol>by</symbol>
+        </rhs>
+    </production>
+    <production id="50">
+        <lhs>ORDER BY CLAUSE</lhs>
+        <rhs>
+            <symbol>ORDER BY</symbol>
+            <symbol>NAME</symbol>
+        </rhs>
+    </production>
+    <production id="51">
+        <lhs>ORDER BY CLAUSE</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="52">
+        <lhs>OUTER</lhs>
+        <rhs>
+            <symbol>outer</symbol>
+        </rhs>
+    </production>
+    <production id="53">
+        <lhs>OUTER</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="54">
+        <lhs>RIGHT OUTER JOIN</lhs>
+        <rhs>
+            <symbol>right</symbol>
+            <symbol>OUTER</symbol>
+            <symbol>join</symbol>
+        </rhs>
+    </production>
+    <production id="55">
+        <lhs>SELECT</lhs>
+        <rhs>
+            <symbol>select</symbol>
+        </rhs>
+    </production>
+    <production id="56">
+        <lhs>SELECT</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="57">
+        <lhs>SELECT CLAUSE</lhs>
+        <rhs>
+            <symbol>select</symbol>
+            <symbol>DISTINCT</symbol>
+            <symbol>OBJECTS</symbol>
+        </rhs>
+    </production>
+    <production id="58">
+        <lhs>SELECT CLAUSE</lhs>
+        <rhs>
+            <symbol>empty</symbol>
+        </rhs>
+    </production>
+    <production id="59">
+        <lhs>SELECT STATEMENT</lhs>
+        <rhs>
+            <symbol>from</symbol>
+            <symbol>CLASSES</symbol>
+            <symbol>FETCH ALL PROPERTIES</symbol>
+            <symbol>WHERE CLAUSE</symbol>
+            <symbol>ORDER BY CLAUSE</symbol>
+        </rhs>
+    </production>
+    <production id="60">
+        <lhs>START</lhs>
+        <rhs>
+            <symbol>SELECT STATEMENT</symbol>
+            <symbol>#</symbol>
+        </rhs>
+    </production>
+    <production id="61">
+        <lhs>TERM</lhs>
+        <rhs>
+            <symbol>FUNCTION</symbol>
+        </rhs>
+    </production>
+    <production id="62">
+        <lhs>TERM</lhs>
+        <rhs>
+            <symbol>COMPOUND NAME</symbol>
+        </rhs>
+    </production>
+    <production id="63">
+        <lhs>TERM</lhs>
+        <rhs>
+            <symbol>string</symbol>
+        </rhs>
+    </production>
+    <production id="64">
+        <lhs>TERM</lhs>
+        <rhs>
+            <symbol>star</symbol>
+        </rhs>
+    </production>
+    <production id="65">
+        <lhs>WHERE CLAUSE</lhs>
+        <rhs>
+            <symbol>where</symbol>
+        </rhs>
+    </production>
+    
+    <terminal name="all">(?i)all</terminal>
+    <terminal name="as">(?i)as</terminal>
+    <terminal name="by">(?i)by</terminal>
+    <terminal name="comma">,</terminal>
+    <terminal name="concatenation">\|\|</terminal>
+    <terminal name="distinct">(?i)distinct</terminal>
+    <terminal name="dot">\.</terminal>
+    <terminal name="equals">=</terminal>
+    <terminal name="fetch">(?i)fetch</terminal>
+    <terminal name="from">(?i)from</terminal>
+    <terminal name="full">(?i)full</terminal>
+    <terminal name="group">(?i)group</terminal>
+    <terminal name="inner">(?i)inner</terminal>
+    <terminal name="join">(?i)join</terminal>
+    <terminal name="left">(?i)left</terminal>
+    <terminal name="left parenthesis">\(</terminal>
+    <terminal name="like">(?i)like</terminal>
+    <terminal name="name" bucket="2">\w+</terminal>
+    <terminal name="new">(?i)new</terminal>
+    <terminal name="order">(?i)order</terminal>
+    <terminal name="outer">(?i)outer</terminal>
+    <terminal name="plus">\+</terminal>
+    <terminal name="properties">(?i)properties</terminal>
+    <terminal name="right">(?i)right</terminal>
+    <terminal name="right parenthesis">\)</terminal>
+    <terminal name="select">(?i)select</terminal>
+    <terminal name="star">\*</terminal>
+    <terminal name="string">'(''|[^'])*'</terminal>
+    <terminal name="where">(?i)where</terminal>
+    <terminal name="whitespace" bucket="0">\s+</terminal>
+</grammar>
